@@ -58,4 +58,14 @@ contract ImmutableWallet {
 		}
 	}
 
+	mapping(address => bytes) messages;
+
+	function setMessage(bytes message){
+		messages[msg.sender] = message;
+	}
+
+	function getMessage(address addr) constant returns(bytes){
+		return messages[addr];
+	}
+
 }

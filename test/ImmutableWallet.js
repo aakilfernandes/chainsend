@@ -242,4 +242,12 @@ describe('ImmutableWallet', () => {
     return web3.eth.getBalance.q(addresses[2]).should.eventually.bignumber.equal(15)
   })
 
+  it('should be able to set a message from accounts[1]', () => {
+    return wallet.setMessage.q('hello world!', { from: accounts[1] }).should.be.fulfilled;
+  })
+
+  it('should able to get correct message from accounts[1]', () => {
+    return wallet.getMessage.q(accounts[1]).should.eventually.be.ascii('hello world!');
+  })
+
 })
