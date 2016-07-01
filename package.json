@@ -1,0 +1,19 @@
+{
+  "name": "ImmutableWallet",
+  "version": "1.0.0",
+  "description": "A contract locks all funds if Ethereum is no longer immutable",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Aakil Fernandes",
+  "license": "MIT",
+  "devDependencies": {
+    "chaithereum": "^1.2.1",
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-mocha-test": "^0.12.7",
+    "grunt-solc": "^0.4.1",
+    "mocha": "^2.5.3"
+  }
+}
