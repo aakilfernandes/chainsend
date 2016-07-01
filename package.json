@@ -1,7 +1,7 @@
 {
   "name": "ImmutableWallet",
   "version": "1.0.0",
-  "description": "A contract locks all funds if Ethereum is no longer immutable",
+  "description": "A contract wallet that locks all funds if Ethereum is no longer immutable",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
