@@ -1,6 +1,6 @@
 contract ChainSend {
 
-	function ChainSend(address to, uint blocknumber, bytes32 blockhash) {
+  function ChainSend(address to, uint blocknumber, bytes32 blockhash) {
     
     if (to == address(0))
       throw;
@@ -14,7 +14,7 @@ contract ChainSend {
     if(!to.send(msg.value))
       throw;
 
-	}
+  }
 
   function(){
     throw;
